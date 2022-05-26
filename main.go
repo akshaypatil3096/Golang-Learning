@@ -1,14 +1,16 @@
 package main
 
 import (
-	arraysandslicesexample "goAssignments/arraysAndSlicesExample"
-	_ "goAssignments/hangmanGame"
+	_ "goAssignments/arraysAndSlicesExample"
+	hangmangame "goAssignments/hangmanGame"
+	_ "goAssignments/mapExample"
 	_ "goAssignments/pointersLearning"
 )
 
 func main() {
 	//pointerslearning.PointersBasics()
-	//hangmangame.Hangman()
-	arraysandslicesexample.ArrayExample()
-	arraysandslicesexample.SliceExample()
+	hangmangame.Hangman()
+	//arraysandslicesexample.ArrayExample()
+	//arraysandslicesexample.SliceExample()
+	//mapexample.MapUsingMakeAndNewKeyword()
 }
