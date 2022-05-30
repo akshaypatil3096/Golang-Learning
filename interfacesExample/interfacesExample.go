@@ -5,24 +5,25 @@ import (
 	"math"
 )
 
-type square struct {
-	length float64
+type Square struct {
+	Length float64
 }
-type circle struct {
-	redius float64
-}
-
-func (s square) area() float64 {
-	return s.length * s.length
+type Circle struct {
+	Redius float64
 }
 
-func (c circle) area() float64 {
-	return math.Pi * c.redius * c.redius
+type areaCalculate interface {
+	area() float64
 }
 
-func MySquare() square {
-	return square{20}
+func (s Square) area() float64 {
+	return s.Length * s.Length
 }
-func PrintAreas(s square) {
-	fmt.Println(s.area())
+
+func (c Circle) area() float64 {
+	return math.Pi * c.Redius * c.Redius
+}
+
+func PrintAreas(a areaCalculate) {
+	fmt.Println(a.area())
 }

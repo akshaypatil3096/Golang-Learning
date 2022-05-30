@@ -3,10 +3,10 @@ package main
 import (
 	_ "goAssignments/arraysAndSlicesExample"
 	_ "goAssignments/hangmanGame"
-	_ "goAssignments/interfacesExample"
+	interfacesexample "goAssignments/interfacesExample"
 	_ "goAssignments/mapExample"
 	_ "goAssignments/pointersLearning"
-	receiverfunctionexample "goAssignments/receiverFunctionExample"
+	_ "goAssignments/receiverFunctionExample"
 )
 
 func main() {
@@ -15,8 +15,10 @@ func main() {
 	//arraysandslicesexample.ArrayExample()
 	//arraysandslicesexample.SliceExample()
 	//mapexample.MapUsingMakeAndNewKeyword()
-	/* tmp := interfacesexample.MySquare()
-	interfacesexample.PrintAreas(tmp) */
-	receiverfunctionexample.Receiverfunctionexample()
+	s := interfacesexample.Square{20}
+	c := interfacesexample.Circle{20}
+	interfacesexample.PrintAreas(s)
+	interfacesexample.PrintAreas(c)
+	//receiverfunctionexample.Receiverfunctionexample()
 
 }
