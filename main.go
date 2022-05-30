@@ -2,8 +2,9 @@ package main
 
 import (
 	_ "goAssignments/arraysAndSlicesExample"
+	goroutinesexample "goAssignments/goRoutinesExample"
 	_ "goAssignments/hangmanGame"
-	interfacesexample "goAssignments/interfacesExample"
+	_ "goAssignments/interfacesExample"
 	_ "goAssignments/mapExample"
 	_ "goAssignments/pointersLearning"
 	_ "goAssignments/receiverFunctionExample"
@@ -15,10 +16,11 @@ func main() {
 	//arraysandslicesexample.ArrayExample()
 	//arraysandslicesexample.SliceExample()
 	//mapexample.MapUsingMakeAndNewKeyword()
-	s := interfacesexample.Square{20}
+	/* s := interfacesexample.Square{20, "fas"}
 	c := interfacesexample.Circle{20}
 	interfacesexample.PrintAreas(s)
-	interfacesexample.PrintAreas(c)
+	interfacesexample.PrintAreas(c) */
 	//receiverfunctionexample.Receiverfunctionexample()
-
+	goroutinesexample.GoRoutines()
+	goroutinesexample.Channels()
 }
