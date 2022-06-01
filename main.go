@@ -2,11 +2,11 @@ package main
 
 import (
 	_ "goAssignments/arraysAndSlicesExample"
-	goroutinesexample "goAssignments/goRoutinesExample"
+	gomodulesexample "goAssignments/goModulesExample"
+	_ "goAssignments/goRoutinesExample"
 	_ "goAssignments/hangmanGame"
 	_ "goAssignments/interfacesExample"
 	_ "goAssignments/mapExample"
-	_ "goAssignments/pointersLearning"
 	_ "goAssignments/receiverFunctionExample"
 )
 
@@ -21,6 +21,9 @@ func main() {
 	interfacesexample.PrintAreas(s)
 	interfacesexample.PrintAreas(c) */
 	//receiverfunctionexample.Receiverfunctionexample()
-	goroutinesexample.GoRoutines()
-	goroutinesexample.Channels()
+	/* goroutinesexample.GoRoutines()
+	goroutinesexample.Channels() */
+
+	gomodulesexample.DescordModule()
+	gomodulesexample.RandomData()
 }
