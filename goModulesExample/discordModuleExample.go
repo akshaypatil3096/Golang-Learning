@@ -1,4 +1,4 @@
-package gomodulesexample
+package main
 
 import (
 	"fmt"
@@ -6,6 +6,10 @@ import (
 	randomdata "github.com/Pallinder/go-randomdata"
 	"github.com/bwmarrin/discordgo"
 )
+
+func main() {
+	DescordModule()
+}
 
 // DescordModule function will generate the discord session object
 func DescordModule() {
@@ -16,7 +20,7 @@ func DescordModule() {
 	fmt.Println("Session created: ", discord)
 }
 
-//RandomData generates the random data
+// RandomData generates the random data
 func RandomData() {
 	fmt.Println("Printing ramdom data ", randomdata.SillyName())
 }

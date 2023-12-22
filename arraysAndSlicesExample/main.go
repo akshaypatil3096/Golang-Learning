@@ -1,6 +1,10 @@
-package arraysandslicesexample
+package main
 
 import "fmt"
+
+func main() {
+	ArrayExample()
+}
 
 func ArrayExample() {
 	arr1 := [4]int{1, 2, 3, 4}
