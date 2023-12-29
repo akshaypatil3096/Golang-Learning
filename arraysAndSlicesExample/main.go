@@ -16,7 +16,7 @@ func ArrayExample() {
 	arr3 := arr2[1:3]
 	fmt.Println("arr3 --> ", arr3, " length is --> ", len(arr3), "capacity is --> ", cap(arr3))
 	//below line will give panic: runtime error: index out of range [4] with length 2
-	arr3[2] = 32
+	arr3[1] = 32
 	arr4 := arr1
 	fmt.Println(arr4)
 }

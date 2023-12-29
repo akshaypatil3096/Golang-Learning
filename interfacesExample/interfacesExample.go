@@ -1,9 +1,17 @@
-package interfacesexample
+package main
 
 import (
 	"fmt"
 	"math"
 )
+
+func main() {
+	cirlce := Circle{
+		Redius: 5,
+	}
+
+	PrintAreas(cirlce)
+}
 
 type Square struct {
 	Length float64
