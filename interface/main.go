@@ -9,7 +9,7 @@ type player interface {
 }
 
 func (s Shami) Stats() {
-	fmt.Println("shami stats", s)
+	fmt.Printf("Shami took %d wickets\n", s)
 }
 
 type Player struct {
@@ -23,7 +23,7 @@ type ViratPlayer struct {
 }
 
 func (v *ViratPlayer) Stats() {
-	fmt.Printf("stamina:%8v power:%8v centuries:%8v\n", v.stamina, v.power, v.centuries)
+	fmt.Printf("Kohli's stats are stamina:%8v power:%8v centuries:%8v\n", v.stamina, v.power, v.centuries)
 }
 
 func (p *Player) Stats() {
@@ -31,8 +31,6 @@ func (p *Player) Stats() {
 }
 
 func main() {
-	var sStats Shami = 1
-	sStats.Stats()
 
 	players := make([]Player, 11)
 	for i := 0; i < len(players); i++ {
@@ -41,8 +39,7 @@ func main() {
 			power:   100,
 		}
 
-		players[i].Stats()
-
+		printDetails(&players[i])
 	}
 
 	virat := &ViratPlayer{
@@ -53,6 +50,12 @@ func main() {
 		centuries: 100,
 	}
 
-	virat.Stats()
+	printDetails(virat)
+	var sStats Shami = 24
+	printDetails(sStats)
 
+}
+
+func printDetails(player player) {
+	player.Stats()
 }
